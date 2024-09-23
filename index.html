@@ -5,41 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/styles.css">
   <link rel="reset" href="./styles/reset.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,
-    400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet"
-  >
   <title>Newsletter sign-up form</title>
 </head>
+
 <body>
-  <!-- Sign-up form start -->
-  <picture class="color-images">
-    <source srcset="./assets/images/illustration-sign-up-mobile.svg" media="(max-width: 799px)">
-    <source srcset="./assets/images/illustration-sign-up-desktop.svg" media="(min-width: 800px)">
-    <img 
-      src="./assets/images/illustration-sign-up-desktop.svg" 
-      alt="multi colored image" 
-      class="images"
-    >
-  </picture>
-  <main>
+  <main class="main-container applied">
     <h1>Stay updated!</h1>
     <p>Join 60,000+ product managers receiving monthly updates on:</p>
     <div class="first-list-icon">
-      <img src="./assets/images/icon-list.svg" alt="list icon" class="list-icon">
+      <img src="./assets/images/icon-list.svg" alt="list icon" class="list-icon" width="21" height="21">
       <p class="icon-paragraph">Product discovery and building what matters</p>
     </div>
     <div class="second-list-icon">
-      <img src="./assets/images/icon-list.svg" alt="list icon" class="list-icon">
+      <img src="./assets/images/icon-list.svg" alt="list icon" class="list-icon" width="21" height="21">
       <p class="icon-paragraph">Measuring to ensure updates are a success</p>
     </div>
    <div class="third-list-icon">
-    <img src="./assets/images/icon-list.svg" alt="list icon" class="list-icon">
+    <img src="./assets/images/icon-list.svg" alt="list icon" class="list-icon" width="21" height="21">
     <p class="icon-paragraph">And much more!</p>
    </div>
-
    <p>
     <label for="mail">
       <span>Email address</span>
@@ -47,24 +33,22 @@
       <span class="error" aria-live="polite"></span>
     </label>
    </p>
-
-    <button>
-      Subscribe to monthly newsletter
-    </button>
-
-    <!-- Sign-up form end -->
-
-    <!-- Success message start -->
-
-    <div class="hidden">
-      Thanks for subscribing!
-
-      A confirmation email has been sent to ash@loremcompany.com. 
-      Please open it and click the button inside to confirm your subscription.
-      Dismiss message
-    </div>
+   <button>
+    Subscribe to monthly newsletter
+   </button>
   </main>
+  <div class="image-container">
+    <img src="./assets/images/illustration-sign-up-mobile.svg" alt="multi-colored" class="images">
+  </div>
+
+  <div class="hidden">
+    Thanks for subscribing!
+
+    A confirmation email has been sent to ash@loremcompany.com. 
+    Please open it and click the button inside to confirm your subscription.
+    Dismiss message
+  </div>
   <!-- Success message end -->
-   <script src="./index.js"></script>
+  <script src="./index.js"></script>
 </body>
 </html>
