@@ -11,35 +11,43 @@
 </head>
 
 <body>
-  <main class="main-container applied">
-    <h1>Stay updated!</h1>
-    <p>Join 60,000+ product managers receiving monthly updates on:</p>
-    <div class="first-list-icon">
+  <main class="main-container">
+    <div class="container applied">
+      <h1>Stay updated!</h1>
+      <p>Join 60,000+ product managers receiving monthly updates on:</p>
+      <div class="first-list-icon">
+        <img src="./assets/images/icon-list.svg" alt="list icon" class="list-icon" width="21" height="21">
+        <p class="icon-paragraph">Product discovery and building what matters</p>
+      </div>
+      <div class="second-list-icon">
+        <img src="./assets/images/icon-list.svg" alt="list icon" class="list-icon" width="21" height="21">
+        <p class="icon-paragraph">Measuring to ensure updates are a success</p>
+      </div>
+    <div class="third-list-icon">
       <img src="./assets/images/icon-list.svg" alt="list icon" class="list-icon" width="21" height="21">
-      <p class="icon-paragraph">Product discovery and building what matters</p>
+      <p class="icon-paragraph">And much more!</p>
     </div>
-    <div class="second-list-icon">
-      <img src="./assets/images/icon-list.svg" alt="list icon" class="list-icon" width="21" height="21">
-      <p class="icon-paragraph">Measuring to ensure updates are a success</p>
+    <form action="">
+      <p>
+        <label for="mail">
+          <span>Email address</span>
+          <input type="text" id="mail" name="mail" required minlength="8" placeholder="email@company.com">
+          <span class="error" aria-live="polite"></span>
+        </label>
+      </p>
+      <button>
+        Subscribe to monthly newsletter
+      </button>
+    </form>
     </div>
-   <div class="third-list-icon">
-    <img src="./assets/images/icon-list.svg" alt="list icon" class="list-icon" width="21" height="21">
-    <p class="icon-paragraph">And much more!</p>
-   </div>
-   <p>
-    <label for="mail">
-      <span>Email address</span>
-      <input type="text" id="mail" name="mail" required minlength="8" placeholder="email@company.com">
-      <span class="error" aria-live="polite"></span>
-    </label>
-   </p>
-   <button>
-    Subscribe to monthly newsletter
-   </button>
+    <div class="image-container">
+      <picture>
+        <source srcset="./assets/images/illustration-sign-up-mobile.svg" media="(max-width: 780px)">
+        <source srcset="./assets/images/illustration-sign-up-desktop.svg" media="(min-width: 781px)">
+        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="multi-colored" class="images">
+      </picture>
+    </div>
   </main>
-  <div class="image-container">
-    <img src="./assets/images/illustration-sign-up-mobile.svg" alt="multi-colored" class="images">
-  </div>
 
   <div class="hidden">
     Thanks for subscribing!
