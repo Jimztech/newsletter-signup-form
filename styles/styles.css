@@ -8,6 +8,7 @@
     --CharcoalGrey: hsl(235, 18%, 26%);
     --Grey: hsl(231, 7%, 60%);
     --White: hsl(0, 0%, 100%);
+    --Pink: hsl(0, 100%, 93%);
 }
 
 body {
@@ -15,7 +16,14 @@ body {
     font-size: 1rem;
     padding: 0;
     margin: 0;
-
+    color: var(--DarkSlateGrey);
+}
+p {
+    color: var(--DarkSlateGrey);
+    font-weight: 400;
+}
+.header {
+    font-weight: 700;
 }
 .applied {
     padding: 1.25rem;
@@ -32,10 +40,74 @@ body {
     align-items: center;
 }
 
+form {
+    padding-top: 20px;
+}
+
+input[type="email"] {
+    appearance: none;
+    width: 100%;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+input:invalid:focus {
+    border-color: var(--Tomato);
+    background-color: var(--Pink);
+    color: var(--Tomato);
+}
+input:focus:invalid {
+    outline: none;
+}
+input:invalid:not(:focus):not(:placeholder-shown) {
+    background-color: white;
+}
+
+.error {
+    width: 100%;
+    padding: 0;
+    color: var(--Tomato);
+    box-sizing: border-box;
+}
+.error.active {
+    padding: 0.3em;
+}
+
+.form-container p {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 1rem;
+}
+.form-container span {
+    display: inline-block;
+}
+
+.form-container span:first-of-type {
+    position: absolute;
+    left: 0;
+    top: -25px;
+}
+.form-container .error {
+    position: absolute;
+    right: 0;
+    top: -30px;
+    text-align: right; /* Ensures the text is aligned to the far right */
+    white-space: nowrap; 
+}
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--DarkSlateGrey);
+    color: var(--White);
+    border: none;
+}
+
 @media (max-width: 780px) {
     .image-container {
         width: 100%;
-        
     }
     .images {
        max-width: 100%;
