@@ -29,6 +29,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    align-items: center;
 }
 
 @media (max-width: 780px) {
