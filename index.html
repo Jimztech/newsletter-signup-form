@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <main class="main-container">
+  <main class="main-container" id="main-container">
     <div class="container applied">
       <h1 class="header">Stay updated!</h1>
       <p>Join 60,000+ product managers receiving monthly updates on:</p>
@@ -27,7 +27,7 @@
       <img src="./assets/images/icon-list.svg" alt="list icon" class="list-icon" width="21" height="21">
       <p class="icon-paragraph">And much more!</p>
     </div>
-    <form novalidate>
+    <form novalidate class="form">  <!--New block of code-->    
       <div class="form-container">
         <p>
           <label for="mail">
@@ -36,7 +36,7 @@
             <span class="error" aria-live="polite"></span>
           </label>
         </p>
-        <button class="button">
+        <button class="button" id="btn">
           Subscribe to monthly newsletter
         </button>
       </div>
@@ -50,16 +50,8 @@
       </picture>
     </div>
   </main>
-
-  <div class="next-page">
-    <h1>Thanks for subscribing!</h1>
-    <p>
-      A confirmation email has been sent to ash@loremcompany.com. 
-      Please open it and click the button inside to confirm your subscription.
-      Dismiss message
-    </p>
-  </div>
   <!-- Success message end -->
+   <!--New page-->
   <script src="./index.js"></script>
 </body>
 </html>

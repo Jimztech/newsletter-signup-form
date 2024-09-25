@@ -28,9 +28,7 @@ p {
 .applied {
     padding: 1.25rem;
 }
-.next-page {
-    display: none;
-}
+
 .first-list-icon,
 .second-list-icon,
 .third-list-icon {
@@ -105,7 +103,7 @@ button {
     border: none;
 }
 
-@media (max-width: 799px) {
+@media (max-width: 49rem) {
     .image-container {
         width: 100%;
     }
@@ -121,5 +119,34 @@ button {
     .main-container {
         display: flex;
         flex-direction: column-reverse;
+    }
+    .next-page {
+        padding: 2.5rem 1.87rem;
+    }
+    .dismiss-btn {
+        margin-top: 7.5rem;
+    }
+}
+
+@media (min-width: 50rem) {
+    .main-container {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        background-color: var(--White);
+        border-radius: 15px;
+    }
+    body {
+        padding: 70px;
+        background-color: var(--CharcoalGrey);
+    }
+    .next-page {
+        padding: 20px 0px;
+        margin: 0 auto;
+    }
+    .few {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
     }
 }
