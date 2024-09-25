@@ -39,7 +39,7 @@ function showError() {
 
 function changeContent(emailValue) {
     main.innerHTML = `
-        <div class="next-page few" id="page">
+        <div class="next-page" id="page">
             <img src="./assets/images/icon-success.svg" alt="success">
             <h1>Thanks for subscribing!</h1>
             <p>
@@ -47,7 +47,7 @@ function changeContent(emailValue) {
                 Please open it and click the button inside to confirm your subscription.
             </p>
             <div class = "dismiss-btn">
-                <button class="button" id = "dismiss">Dismiss message</button>
+                <button class="btn btn2" id = "dismiss">Dismiss message</button>
             </div>
         </div>
     `

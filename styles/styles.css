@@ -140,13 +140,18 @@ button {
         background-color: var(--CharcoalGrey);
     }
     .next-page {
-        padding: 20px 0px;
-        margin: 0 auto;
+        padding-left: 0;
+        margin-left: 200px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 0;
     }
-    .few {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
+    .btn1:hover {
+        background-color: var(--Tomato);
+        color: var(--White);
+    }
+    .btn2:hover {
+        background-color: var(--Tomato);
+        color: var(--White);
     }
 }
