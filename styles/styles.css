@@ -154,4 +154,7 @@ button {
         background-color: var(--Tomato);
         color: var(--White);
     }
+    .applied{
+        padding: 2.5rem;
+    }
 }
